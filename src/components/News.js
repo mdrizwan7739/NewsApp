@@ -88,9 +88,9 @@ function News(props) {
             {loading && <h4 className='text-center my-3'>Loading...</h4>}
 
             <InfiniteScroll
-                dataLength={articles.length}
+                dataLength={articles?.length}
                 next={fetchMoreData}
-                hasMore={articles.length !== result}
+                hasMore={articles?.length !== result}
 
                 loader={loading && <h4 className='text-center my-3'>Loading...</h4>} >
                 <div className="container">
